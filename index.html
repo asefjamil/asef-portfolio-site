@@ -27,70 +27,68 @@
   </style>
   <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 </head>
-<<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800">
 
- <!-- Profile Header (Always Visible) -->
-<div class="max-w-6xl mx-auto px-6 py-6 text-center">
-  <img src="assets/img/asef.JPG" alt="Asef Jamil" class="mx-auto w-24 h-24 rounded-full mb-4" />
-  <h1 class="text-2xl md:text-3xl font-semibold">Asef Jamil</h1>
-</div>
-
-
-  <!-- Hidden Header (Fades in on hover) -->
-  <header id="menuBar" class="bg-white shadow-md fixed top-0 left-0 w-full z-50 opacity-0 pointer-events-none transition-opacity duration-300">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <nav class="space-x-6 text-base md:text-lg" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600;">
-      <a href="index.html" class="text-gray-900 hover:text-yellow-500">Home</a>
-      <a href="onstage.html" class="text-gray-900 hover:text-yellow-500">Onstage</a>
-      <a href="offstage.html" class="text-gray-900 hover:text-yellow-500">Offstage</a>
-      <a href="papertrail.html" class="text-gray-900 hover:text-yellow-500">Papertrail</a>
-      <a href="mindspace.html" class="text-gray-900 hover:text-yellow-500">Mindspace</a>
-      <a href="contact.html" class="text-gray-900 hover:text-yellow-500">Contact</a>
-    </nav>
-  </div>
-</header>
-
-  <!-- Hero Section -->
-  <section class="relative bg-gray-200 py-28 px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6">Welcome!</h2>
-      <div class="text-base md:text-lg leading-7 md:leading-8 justified-text text-gray-700">
-        <p>Hi! This is Asef Jamil — a strategist majorly focused on financial and legal frameworks, with a Master’s degree in both Finance and Law.</p>
-        <p>Beyond this strategic worklife, I pursue independent research and have authored internationally published journals focusing on economics, artificial intelligence, and public policy.</p>
-        <p>My personal thoughts, views, and critical reflections also shape what I share here.</p>
-        <p>An alumnus of the University of Dhaka, Bangladesh.</p>
-        <p><strong>This site isn’t about work or life — it’s about exploring what connects them and beholding the beauty and joy of being part of that design.</strong></p>
-      </div>
+  <!-- Header Navigation -->
+  <header id="menuBar" class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-opacity duration-300">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-end items-center">
+      <nav class="space-x-6 text-base md:text-lg" style="font-family: 'Source Sans Pro', sans-serif; font-weight: 600;">
+        <a href="index.html" class="text-gray-900 hover:text-yellow-500">Home</a>
+        <a href="onstage.html" class="text-gray-900 hover:text-yellow-500">Onstage</a>
+        <a href="offstage.html" class="text-gray-900 hover:text-yellow-500">Offstage</a>
+        <a href="papertrail.html" class="text-gray-900 hover:text-yellow-500">Papertrail</a>
+        <a href="mindspace.html" class="text-gray-900 hover:text-yellow-500">Mindspace</a>
+        <a href="contact.html" class="text-gray-900 hover:text-yellow-500">Contact</a>
+      </nav>
     </div>
+  </header>
+
+  <!-- Hero Section: Image + Welcome -->
+  <section class="flex flex-col md:flex-row items-center justify-center min-h-screen pt-24 px-6 bg-white border-b border-gray-200">
+    <img src="assets/img/asef.png" alt="Asef Jamil" class="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover mb-6 md:mb-0 md:mr-12 shadow-lg">
+    <h1 class="text-4xl md:text-6xl font-semibold tracking-tight text-gray-900">Welcome!</h1>
   </section>
 
+  <!-- Description Section -->
+  <section class="max-w-3xl mx-auto px-6 py-12 leading-relaxed text-lg">
+    <p class="mb-6">Hi! This is Asef Jamil — a strategist majorly focused on financial and legal frameworks, with a Master’s degree in both Finance and Law.</p>
+    <p class="mb-6">Beyond this strategic worklife, I pursue independent research and have authored internationally published journals focusing on economics, artificial intelligence, and public policy.</p>
+    <p class="mb-6">My personal thoughts, views, and critical reflections also shape what I share here.</p>
+    <p class="mb-6">An alumnus of the University of Dhaka, Bangladesh.</p>
+    <p class="font-semibold text-gray-800">This site isn’t about work or life — it’s about exploring what connects them and beholding the beauty and joy of being part of that design.</p>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white text-sm py-6">
     <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
       <p>&copy; 2025 Asef Jamil. All rights reserved.</p>
       <div class="space-x-4 mt-2 md:mt-0">
-        <a href="https://www.instagram.com/asefjamil" target="_blank" class="hover:text-yellow-400">Instagram</a>
+        <a href="https://www.instagram.com/asefjamil13" target="_blank" class="hover:text-yellow-400">Instagram</a>
         <a href="https://www.youtube.com/@asefjamil" target="_blank" class="hover:text-yellow-400">YouTube</a>
         <a href="https://twitter.com/asef_jamil" target="_blank" class="hover:text-yellow-400">X</a>
         <a href="https://www.linkedin.com/in/asefjamil" target="_blank" class="hover:text-yellow-400">LinkedIn</a>
-        <a href="https://medium.com/@asefjamil" target="_blank" class="hover:text-yellow-400">Medium</a>
       </div>
     </div>
   </footer>
-<script>
-  const menuBar = document.getElementById('menuBar');
 
-  document.addEventListener('mousemove', (e) => {
-    if (e.clientY <= 80) {
-      menuBar.classList.add('opacity-100', 'pointer-events-auto');
-      menuBar.classList.remove('opacity-0', 'pointer-events-none');
-    } else {
-      menuBar.classList.add('opacity-0', 'pointer-events-none');
-      menuBar.classList.remove('opacity-100', 'pointer-events-auto');
-    }
-  });
-</script>
+  <!-- Scroll Detection Script -->
+  <script>
+    let lastScroll = 0;
+    const menuBar = document.getElementById('menuBar');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+
+      if (currentScroll > lastScroll) {
+        menuBar.style.opacity = "0";
+      } else {
+        menuBar.style.opacity = "1";
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
 
 </body>
+
 </html>
