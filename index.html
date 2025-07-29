@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="google7b1fadb0181731d1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Official site of Asef Jamil – strategist, researcher, and observer connecting finance, law, and independent thought." />
   <meta name="author" content="Asef Jamil" />
@@ -43,47 +44,49 @@
     </div>
   </header>
 
-<!-- Hero Section with Background -->
-<section class="relative flex flex-col md:flex-row items-center justify-center min-h-screen pt-28 px-6 border-b border-gray-200"
-         style="background-image: url('assets/img/hero-cover.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <!-- Hero Section with Background -->
+  <section class="relative flex flex-col md:flex-row items-center justify-center min-h-screen pt-28 px-6 border-b border-gray-200"
+           style="background-image: url('assets/img/hero-cover.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 
-  <!-- White Overlay for Readability -->
-  <div class="absolute inset-0 bg-white bg-opacity-70"></div>
+    <!-- White Overlay for Readability -->
+    <div class="absolute inset-0 bg-white bg-opacity-70"></div>
 
-  <!-- Content Block -->
-  <div class="relative z-10 md:w-1/2 flex justify-center mb-8 md:mb-0">
-    <img src="assets/img/asef.png" alt="Asef Jamil" class="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-lg">
-  </div>
-
-  <div class="relative z-10 md:w-1/2 text-center md:text-left">
-    <h1 class="text-4xl md:text-6xl font-semibold text-gray-900 mb-2">Welcome!</h1>
-    <p class="text-gray-500 text-sm mb-4">Strategist focused on finance, law, and institutional strategy</p>
-    <div class="text-base md:text-lg leading-relaxed text-gray-700 space-y-1">
-      <p><strong>Coordinator, Strategy & Finance</strong>, Finager Fintech</p>
-      <p><strong>B.B.A. & M.B.A (Finance)</strong>, University of Dhaka</p>
-      <p><strong>LL.B</strong>, National University</p>
+    <!-- Content Block -->
+    <div class="relative z-10 md:w-1/2 flex justify-center mb-8 md:mb-0">
+      <img src="assets/img/asef.png" alt="Asef Jamil" class="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-lg">
     </div>
-  </div>
 
-<section class="max-w-3xl mx-auto px-6 py-12 leading-relaxed text-lg">
-  <p class="mb-4">Hello!<br>Welcome to my space!</p>
+    <div class="relative z-10 md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-6xl font-semibold text-gray-900 mb-2">Welcome!</h1>
+      <p class="text-gray-500 text-sm mb-4">Strategist focused on finance, law, and institutional strategy</p>
+      <div class="text-base md:text-lg leading-relaxed text-gray-700 space-y-1">
+        <p><strong>Coordinator, Strategy & Finance</strong>, Finager Fintech</p>
+        <p><strong>B.B.A. & M.B.A (Finance)</strong>, University of Dhaka</p>
+        <p><strong>LL.B</strong>, National University</p>
+      </div>
+    </div>
+  </section>
 
-  <p class="mb-6">
-    This space reflects the side of what I do: observing patterns, studying systems, and writing down what often goes unsaid.
-  </p>
+  <!-- Description Section -->
+  <section class="max-w-3xl mx-auto px-6 py-12 leading-relaxed text-lg">
+    <p class="mb-4">Hello!<br>Welcome to my space!</p>
 
-  <p class="mb-6">
-    I spend time independently exploring themes like economic behavior, artificial intelligence, and public policy — sometimes through published research, sometimes through thought experiments.
-  </p>
+    <p class="mb-6">
+      This space reflects the side of what I do: observing patterns, studying systems, and writing down what often goes unsaid.
+    </p>
 
-  <p class="mb-6">
-    What you’ll find here isn’t polished performance. It’s perspective — honest, evolving, and deeply curious.
-  </p>
+    <p class="mb-6">
+      I spend time independently exploring themes like economic behavior, artificial intelligence, and public policy — sometimes through published research, sometimes through thought experiments.
+    </p>
 
-  <p class="font-semibold text-gray-800">
-    This site isn’t about work or life — it’s about exploring what connects them and beholding the beauty and joy of being part of that design.
-  </p>
-</section>
+    <p class="mb-6">
+      What you’ll find here isn’t polished performance. It’s perspective — honest, evolving, and deeply curious.
+    </p>
+
+    <p class="font-semibold text-gray-800">
+      This site isn’t about work or life — it’s about exploring what connects them and beholding the beauty and joy of being part of that design.
+    </p>
+  </section>
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white text-sm py-6">
@@ -105,17 +108,10 @@
 
     window.addEventListener('scroll', () => {
       const currentScroll = window.pageYOffset;
-
-      if (currentScroll > lastScroll) {
-        menuBar.style.opacity = "0";
-      } else {
-        menuBar.style.opacity = "1";
-      }
-
+      menuBar.style.opacity = currentScroll > lastScroll ? "0" : "1";
       lastScroll = currentScroll;
     });
   </script>
 
 </body>
-
 </html>
